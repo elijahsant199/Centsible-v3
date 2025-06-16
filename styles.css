@@ -1,0 +1,105 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #1e1e2f;
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+}
+
+.main-container {
+  padding: 16px;
+  max-width: 390px;
+  margin: auto;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section {
+  background: #2c2c3e;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.earnings-grid, .savings-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.earnings-box, .savings-box {
+  background: #1e1e2f;
+  border-radius: 8px;
+  padding: 4px 6px;
+  flex: 1;
+}
+
+.label {
+  font-size: 11px;
+  color: #ccc;
+}
+
+.value {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.value-bold {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.tax-removed {
+  font-size: 11px;
+  color: #ccc;
+  margin-bottom: 4px;
+}
+
+.tax-value {
+  color: #ff6666;
+}
+
+.pay-period {
+  background: #1e1e2f;
+  border-radius: 8px;
+  padding: 4px 6px;
+  margin-bottom: 6px;
+}
+
+.earnings-total {
+  margin-bottom: 4px;
+}
+
+.link-container {
+  background: #1e1e2f;
+  border-radius: 8px;
+  padding: 6px;
+  margin-top: 6px;
+}
+
+.link-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: #00f2ff;
+  text-align: center;
+  margin: 0;
+}

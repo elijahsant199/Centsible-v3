@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Centsible</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" href="icon-192.png" />
+  <meta name="theme-color" content="#1e1e2f" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./service-worker.js');
+    }
+  </script>
+</head>
+<body>
+  <div class="main-container">
+    <h1 class="app-title">Centsible</h1>
+
+    <div class="section">
+      <h2 class="section-title">Earnings</h2>
+      <div class="earnings-grid">
+        <div class="earnings-box">
+          <p class="label">Hourly Rate</p>
+          <p class="value">$15.00</p>
+        </div>
+        <div class="earnings-box">
+          <p class="label">Hours Worked</p>
+          <p class="value">40 hrs</p>
+        </div>
+      </div>
+      <div class="pay-period">
+        <p class="label">Pay Period</p>
+        <p class="value">Biweekly ></p>
+      </div>
+      <div class="earnings-total">
+        <p class="this-week">This Week</p>
+        <p class="value-bold">$800.00</p>
+        <p class="tax-removed">Removed for Taxes <span class="tax-value">-104.64</span></p>
+      </div>
+      <div class="link-container"><p class="link-text">Add Bonuses/Tips</p></div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Expenses</h2>
+      <div class="link-container"><p class="link-text">Add Expense</p></div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Savings</h2>
+      <div class="savings-grid">
+        <div class="savings-box">
+          <p class="label">Savings</p>
+          <p class="value">$1,000.00</p>
+        </div>
+        <div class="savings-box">
+          <p class="label">Savings Goal</p>
+          <p class="value">$1,500.00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+  <div class="tab-bar">
+    <div class="tab-icon" onclick="switchTab('earningsTab')">
+      <img src="tab-earnings.svg" class="tab-img"/><p class="tab-label">Earnings</p>
+    </div>
+    <div class="tab-icon active" onclick="switchTab('expensesTab')">
+      <img src="tab-expenses.svg" class="tab-img"/><p class="tab-label">Expenses</p>
+    </div>
+    <div class="tab-icon" onclick="switchTab('goalsTab')">
+      <img src="tab-goals.svg" class="tab-img"/><p class="tab-label">Save Goals</p>
+    </div>
+    <div class="tab-icon" onclick="switchTab('savesTab')">
+      <img src="tab-saves.svg" class="tab-img"/><p class="tab-label">Saves</p>
+    </div>
+  </div>
+</body>
+
+</html>
